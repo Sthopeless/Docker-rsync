@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>rsync</Name>
+  <Repository>sthopeless/rsync</Repository>
+  <Registry>https://hub.docker.com/r/sthopeless/rsync/</Registry>
+  <Network>sthope</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/sthopeless/rsync/</Support>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Sthopeless/Docker-rsync/master/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs>-a /data/src/ /data/dst/</PostArgs>
+  <CPUset/>
+  <DateInstalled></DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="TZ" Target="TZ" Default="Europe/Amsterdam" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Europe/Amsterdam</Config>
+  <Config Name="Folder Source" Target="/data/src" Default="/mnt/remotes/laptop" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/remotes/laptop</Config>
+  <Config Name="Folder Destination" Target="/data/dst" Default="/mnt/user/Backups/laptop_backup" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Backups/laptop_backup</Config>
+</Container>
