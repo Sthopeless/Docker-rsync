@@ -20,7 +20,7 @@ Supported architectures:
 
 * the image supports multiple architectures: `x86-64` and `arm32`
 * the docker manifest is used for multi-platform awareness
-* by simply pulling or running `ogivuk/rsync:latest`, the correct image for your architecture will be retreived
+* by simply pulling or running `sthopeless/rsync-docker:latest`, the correct image for your architecture will be retreived
 
 | Tag | Transmission Version and Architecture |
 | :--- | :----    |
@@ -45,7 +45,7 @@ docker run --rm \
     --name=rsync \
     --volume /path/to/source/data:/data/src \
     --volume /path/to/destination/data:/data/dst \
-    ogivuk/rsync [OPTIONS] /data/src/ /data/dst/
+    sthopeless/rsync-docker [OPTIONS] /data/src/ /data/dst/
 ```
 
 Replace:
@@ -81,7 +81,7 @@ Replace:
       --volume ~/rsync:/rsync
       --volume /path/to/source/data:/data/src \
       --volume /path/to/destination/data:/data/dst \
-      ogivuk/rsync
+      sthopeless/rsync-docker
   ```
 
 * run as a swarm service:
@@ -94,7 +94,7 @@ Replace:
       --mount type=bind,src=~/rsync,dst=/rsync \
       --mount type=bind,src=/path/to/source/data,dst=/data/src \
       --mount type=bind,src=/path/to/destination/data,dst=/data/dst \
-      ogivuk/rsync
+      sthopeless/rsync-docker
   ```
 
 | Parameter | Explanation | When to Use |
